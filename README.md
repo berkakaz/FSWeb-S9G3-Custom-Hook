@@ -30,9 +30,9 @@ Bu projede kripto para izleme uygulamasını alacak ve 2 custom hook oluşturup,
 
 * [x] `hooks` adında bir klasör oluşturun
 * [x] `geceModuAc.js` adında bir dosya oluşturun.
-* [ ] Sadece bir boolean(true/false) state değeri ile yüklenen bir hook oluşturun. Bu değer gece modunun açık olup olmadığını belirlemeye yarayacak.
+* [x] Sadece bir boolean(true/false) state değeri ile yüklenen bir hook oluşturun. Bu değer gece modunun açık olup olmadığını belirlemeye yarayacak.
 * [ ] Oluşturduğunuz state dilimini ve state'i düzenlemenize yarayan fonksiyonu döndürün.
-* [ ] App.js'deki geceModu state tanımlamasını oluşturduğunuz geceModuAc hooku ile değiştirin.
+* [x] App.js'deki geceModu state tanımlamasını oluşturduğunuz geceModuAc hooku ile değiştirin.
 
 #### localStorageKullan hooku oluşturun
 
