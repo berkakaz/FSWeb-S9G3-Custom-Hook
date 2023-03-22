@@ -18,30 +18,30 @@ Bu projede kripto para izleme uygulamasını alacak ve 2 custom hook oluşturup,
 
 ### Görev 1: Proje Kurulumu
 
-* [ ] Projeyi forklayın.
-* [ ] Klonlayın
-* [ ] Proje dizinine gidin
-* [ ] `npm install`
-* [ ] `npm start`
+* [x] Projeyi forklayın.
+* [x] Klonlayın
+* [x] Proje dizinine gidin
+* [x] `npm install`
+* [x] `npm start`
 
 ### Görev 2: Proje Gereksinimleri
 
 #### Bir geceModuAc hooku oluşturun
 
-* [ ] `hooks` adında bir klasör oluşturun
-* [ ] `geceModuAc.js` adında bir dosya oluşturun.
+* [x] `hooks` adında bir klasör oluşturun
+* [x] `geceModuAc.js` adında bir dosya oluşturun.
 * [ ] Sadece bir boolean(true/false) state değeri ile yüklenen bir hook oluşturun. Bu değer gece modunun açık olup olmadığını belirlemeye yarayacak.
 * [ ] Oluşturduğunuz state dilimini ve state'i düzenlemenize yarayan fonksiyonu döndürün.
 * [ ] App.js'deki geceModu state tanımlamasını oluşturduğunuz geceModuAc hooku ile değiştirin.
 
 #### localStorageKullan hooku oluşturun
 
-* [ ] `localStorageKullan.js` adında bir dosya oluşturun.
+* [x] `localStorageKullan.js` adında bir dosya oluşturun.
 * [ ] Bir key value ve baslangicDegeri alan bir hook oluşturun.
 
 #### geceModuAc çevresinde localStorageKullan 'ı kullanın
 
-* [ ] geceModuAc hooku içine localStorageKullan'ı import edin.
+* [x] geceModuAc hooku içine localStorageKullan'ı import edin.
 * [ ] localStorage'a kaydedilmiş değere göre UI'den switche tıklandığında gece modunu açıp kapatmayı ayarlayın.
 * [ ] App kapatılıp açıldığında gece modu daha önce aktif edildiyse uygulama gece modunda başlasın.
 
