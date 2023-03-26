@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import useLocalStorage from "../hooks/localStorageKullan";
+
+
 
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
 
 const App = () => {
   const [coinData, setCoinData] = useState([]);
-  const [geceModu, setGeceModu] = useState(false);
+  const [geceModuAc, setGeceModuAc] = useLocalStorage("nachtMode" ,false);
+  const [userInf, setuserInf] = useLocalStorage("loggedInUser", {
+    userName: "yokke",
+    userEmail: "vidivici@vokke.com",
 
+  });
   useEffect(() => {
     axios
       .get(
@@ -17,8 +24,8 @@ const App = () => {
       .catch(err => console.log(err));
   }, []);
   return (
-    <div className={geceModu ? "dark-mode App" : "App"}>
-      <Navbar geceModu={geceModu} setGeceModu={setGeceModu} />
+    <div className={geceModuAc ? "dark-mode App" : "App"}>
+      <Navbar geceModuAc={geceModuAc} setGeceModuAc={setGeceModuAc} />
       <Charts coinData={coinData} />
     </div>
   );
